@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GpxMerge.Console", "GpxMerge.Console\GpxMerge.Console.csproj", "{C3E5BBD7-7285-4016-BE8C-965C587BD67D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GpxMerge", "GpxMerge\GpxMerge.csproj", "{967CE500-4489-4705-9AAF-7786718CF58A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3E5BBD7-7285-4016-BE8C-965C587BD67D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E5BBD7-7285-4016-BE8C-965C587BD67D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E5BBD7-7285-4016-BE8C-965C587BD67D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E5BBD7-7285-4016-BE8C-965C587BD67D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{967CE500-4489-4705-9AAF-7786718CF58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{967CE500-4489-4705-9AAF-7786718CF58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{967CE500-4489-4705-9AAF-7786718CF58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{967CE500-4489-4705-9AAF-7786718CF58A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
