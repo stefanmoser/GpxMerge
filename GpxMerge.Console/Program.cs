@@ -11,13 +11,13 @@ namespace GpxMerge.Console
             {
                 System.Console.WriteLine("Starting . . .");
 
-                var outputFileName = @"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May01New.gpx";
+                var outputFileName = @"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May03New.gpx";
                 File.Delete(outputFileName);
 
                 var merger = new GpxMerger();
 
-                var stravaFile = new FileInfo(@"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May01Android.orig.gpx");
-                var garminFile = new FileInfo(@"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May01Garmin.orig.gpx");
+                var stravaFile = new FileInfo(@"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May03Android.gpx");
+                var garminFile = new FileInfo(@"C:\Users\stefan.moser\Google Drive\Bike\GPS\GPS-HR Merge\May03Garmin.gpx");
 
                 merger.MergeFiles(stravaFile, garminFile, outputFileName);
             }

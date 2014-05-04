@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{967CE500-4489-4705-9AAF-7786718CF58A}</ProjectGuid>
+    <ProjectGuid>{DBF110A9-A50E-4BB1-B976-303AC7E5AAA3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GpxMerge</RootNamespace>
-    <AssemblyName>GpxMerge</AssemblyName>
+    <RootNamespace>GpxMerge.Tests</RootNamespace>
+    <AssemblyName>GpxMerge.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -33,20 +33,38 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentAssertions">
+      <HintPath>..\packages\FluentAssertions.3.0.107\lib\net45\FluentAssertions.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentAssertions.Core">
+      <HintPath>..\packages\FluentAssertions.3.0.107\lib\net45\FluentAssertions.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GeographicCoordinate.cs" />
-    <Compile Include="GpxActivity.cs" />
-    <Compile Include="GpxGpsPoint.cs" />
-    <Compile Include="GpxMerger.cs" />
+    <Compile Include="GpxGpsPointFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="TestGpxFiles\Android.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TestGpxFiles\Garmin.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GpxMerge\GpxMerge.csproj">
+      <Project>{967ce500-4489-4705-9aaf-7786718cf58a}</Project>
+      <Name>GpxMerge</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

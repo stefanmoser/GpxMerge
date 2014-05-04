@@ -15,7 +15,7 @@ namespace GpxMerge
             heartRateDoc.Load(heartRateFile.FullName);
 
             var mgr = new XmlNamespaceManager(gpsDoc.NameTable);
-            mgr.AddNamespace("gpx", "http://www.topografix.com/GPX/1/1");
+            mgr.AddNamespace("gpx", "http://www.topografix.com/GPX/1/1");   
 
             XmlNodeList gpsNodes = gpsDoc.SelectNodes("/gpx:gpx/gpx:trk/gpx:trkseg/gpx:trkpt", mgr);
             foreach (XmlNode gpsNode in gpsNodes)
